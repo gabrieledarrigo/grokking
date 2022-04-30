@@ -5,6 +5,7 @@
     "allowJs": false,
     "sourceMap": true,
     "outDir": "./out",
+    "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
