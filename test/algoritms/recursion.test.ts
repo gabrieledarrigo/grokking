@@ -1,4 +1,4 @@
-import { sum } from "../../src/algorithms/recursion";
+import { sum } from '../../src/algorithms/recursion';
 
 describe('Recursion', () => {
   describe('sum', () => {

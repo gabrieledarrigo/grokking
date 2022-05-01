@@ -1,4 +1,4 @@
-import { selectionSort } from "../../src/algorithms/selectionSort";
+import { selectionSort } from '../../src/algorithms/selectionSort';
 
 describe('selectionSort', () => {
   it('should sort an array of number on descending order', () => {
@@ -6,10 +6,6 @@ describe('selectionSort', () => {
 
     const actual = selectionSort(arr);
 
-    expect(actual).toEqual([
-      5, 11, 26, 29, 31, 39,
-     47, 49, 52, 56, 75, 82,
-     86, 88, 93
-   ]);
+    expect(actual).toEqual([5, 11, 26, 29, 31, 39, 47, 49, 52, 56, 75, 82, 86, 88, 93]);
   });
 });

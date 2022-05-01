@@ -14,10 +14,8 @@ export function recursiveBinarySearch(arr: number[], search: number, low: number
     return recursiveBinarySearch(arr, search, mid + 1, high);
   }
 
-
   return null;
 }
-
 
 // Binary search is a search algorithm.
 // It accepts in input an array of sorted elements and returns the position of the searched element if it's present in the list, or null otherwise.
