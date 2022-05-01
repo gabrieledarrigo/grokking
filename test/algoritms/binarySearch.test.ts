@@ -23,7 +23,7 @@ describe('binarySearch', () => {
     it('should return the index of the searched element if it is present in the input array', () => {
       const arr = [2, 4, 7, 10, 29, 32, 56, 75, 95];
 
-      const actual = recursiveBinarySearch(arr, 29, 0, arr.length - 1);
+      const actual = recursiveBinarySearch(arr, 29, 0, arr.length);
 
       expect(actual).toEqual(4);
     });
@@ -31,7 +31,7 @@ describe('binarySearch', () => {
     it('should return null if the searched element is not present in the input array', () => {
       const arr = [2, 4, 7, 10, 29, 32, 56, 75, 95];
 
-      const actual = recursiveBinarySearch(arr, 314, 0, arr.length - 1);
+      const actual = recursiveBinarySearch(arr, 314, 0, arr.length);
 
       expect(actual).toBe(null);
     });
