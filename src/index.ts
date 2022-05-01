@@ -1,4 +1,4 @@
-import { sum } from './recursion/recursion';
+import { sum } from './algorithms/recursion';
 
 const arr = [1,2,3,4];
 
