@@ -40,6 +40,34 @@ describe('LinkedList', () => {
       expect(list.tail?.value).toBe(nextValue);
     });
   });
+
+  describe('get', () => {
+    it('should get a value from the list in the given position', () => {
+      const value = 1;
+      const nextValue = 2;
+      const lastValue = 3;
+
+      const list = new LinkedList<number>();
+      list.add(value);
+      list.add(nextValue);
+      list.add(lastValue);
+
+      expect(list.get(0)).toBe(value);
+      expect(list.get(1)).toBe(nextValue);
+      expect(list.get(2)).toBe(lastValue);
+    });
+
+    it('should return null if a value is not present in the list', () => {
+      const value = 1;
+      const nextValue = 2;
+
+      const list = new LinkedList<number>();
+      list.add(value);
+      list.add(nextValue);
+
+      expect(list.get(3)).toBe(null);
+    });
+  });
 });
 
 describe('Node', () => {
