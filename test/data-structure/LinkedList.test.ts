@@ -1,6 +1,19 @@
 import { LinkedList, Node } from '../../src/data-structure/LinkedList';
 
 describe('LinkedList', () => {
+  it('could be iterated', () => {
+    const value = 1;
+    const nextValue = 2;
+    const lastValue = 3;
+
+    const list = new LinkedList<number>();
+    list.add(value);
+    list.add(nextValue);
+    list.add(lastValue);
+
+    expect([...list]).toEqual([value, nextValue, lastValue]);
+  });
+
   describe('add', () => {
     it('should add a value to the head of the list if the LinkedList is empty', () => {
       const value = 1;

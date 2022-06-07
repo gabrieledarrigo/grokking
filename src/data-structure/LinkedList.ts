@@ -29,6 +29,18 @@ export class LinkedList<T> {
   }
 
   /**
+   * A LinkeList could be iterated.
+   */
+  *[Symbol.iterator]() {
+    let current = this.head;
+
+    while (current !== null) {
+      yield current.value;
+      current = current?.next;
+    }
+  }
+
+  /**
    * Add a value to the tail of the LinkedList.
    *
    * @param value the value to add
