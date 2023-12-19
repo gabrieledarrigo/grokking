@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
     "target": "esnext",
+    "lib": ["ES2023"],
+    "moduleResolution": "node16",
+    "module": "node16",
     "rootDir": "./",
     "allowJs": false,
     "sourceMap": true,
-    "outDir": "./out",
-    "module": "commonjs",
+    "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,

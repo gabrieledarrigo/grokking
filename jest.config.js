@@ -1,6 +1,8 @@
 module.exports = {
-  testMatch: [
-    "**/?(*.)+(spec|test).[tj]s?(x)"
-  ],
+  clearMocks: true,
+  resetMocks: true,
+  resetModules: true,
+  restoreMocks: true,
+  testMatch: ['**/?(*.)+(spec|test).ts?(x)'],
   verbose: true,
-}
+};
