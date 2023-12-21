@@ -1,13 +1,22 @@
 /**
- * Represents a directred graph data structure, using an adjacency list.
+ * Represents an undirectred graph data structure, using an adjacency list.
  * Each node of the graph is represented by a key in the Map, while the value represents the list of neighbors.
  * @template T The type of the vertices in the graph.
  */
 export class Graph<T> {
-  private adjancencyList: Map<T, T[]>;
+  private readonly adjancencyList: Map<T, T[]>;
 
   constructor() {
     this.adjancencyList = new Map();
+  }
+
+  /**
+   * Returns the adjacency list of the graph.
+   * The adjacency list is represented as a map where each key represents a vertex and the corresponding value is an array of adjacent vertices.
+   * @returns The adjacency list of the graph.
+   */
+  public getAdjacencyList(): Map<T, T[]> {
+    return this.adjancencyList;
   }
 
   /**
